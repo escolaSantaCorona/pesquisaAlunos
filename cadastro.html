@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+      <style>
+         body {
+         background-color: rgb(57, 169, 219);
+         font-family: Rubik, Arial;
+         }
+         form {
+         text-align: center;
+         line-height: 30px;
+         height: 80%;
+         overflow: auto;
+         margin: auto;
+         }
+         input {
+         text-align: center;
+         display: inline-block;
+         width: 80%;
+         line-height: 30px;
+         margin: auto;
+         }
+         #nascimento {
+         line-height: 30px;
+         height: 80%;
+         overflow: auto;
+         width: 80%;
+         text-align: center;
+         }
+         #formulario {
+         width: 80%;
+         margin: 3% auto;
+         height: 95vh;
+         background-color: rgba(255, 255, 255, 0.9);
+         border-radius: 40px;
+         }
+         #logo {
+         height: 100px;
+         display: block;
+         margin: auto;
+         }
+         .container {
+         display: flex;
+         gap: 0.625%;
+         width: 80%;
+         margin: auto;
+         }
+         a {
+         flex: 1;
+         text-decoration: none;
+         outline: none;
+         text-align: center;
+         line-height: 3;
+         color: black;
+         }
+         a:link,
+         a:visited,
+         a:focus {
+         background: yellow;
+         }
+         a:hover {
+         background: orange;
+         }
+         a:active {
+         background: red;
+         color: white;
+         }
+         .button {
+         transition-duration: 0.4s;
+         border: 2px solid #4CAF50;
+         background-color: red;
+         padding: 14px 40px;
+         }
+         .button:hover {
+         background-color: green;
+         color: black;
+         border: 2px solid #4CAF50;
+         padding: 14px 40px;
+         }
+      </style>
+      <title>Document</title>
+   </head>
+   <header>
+      <nav class="container">
+         <a href="./index.html">Pesquisar Alunos</a>
+      </nav>
+   </header>
+   <body>
+      <section id="formulario">
+         <img src="./logo da escola.png" alt="escola santa corona" id="logo">
+         <form
+            action="https://sheetdb.io/api/v1/dawhudst1ngau?sheet=pagina1"
+            method="POST" id="sheetdb-form">
+            <label for="id">ID</label>
+            <br>
+            <input name="data[id]" id="id" class="form-control" required>
+            <br>
+            <label for="nome">NOME</label>
+            <br>
+            <input name="data[nome_do_aluno]" id="nome" class="form-control" rows="1" required>
+            <br>
+            <label for="nsc">nascimento</label>
+            <br>
+            <input type="date" name="data[data_de_nascimento]" id="nsc" class="form-control" rows="1" required>
+            <br>
+            <label for="doc">documento</label>
+            <br>
+            <input name="data[certidao_cpf_rg]" id="doc" class="form-control" rows="1" required>
+            <br>
+            <label for="livro">livro</label>
+            <br>
+            <input name="data[livro]" id="livro" class="form-control" rows="1" required>
+            <br>
+            <label for="folha">folha</label>
+            <br>
+            <input name="data[folha]" id="folha" class="form-control" rows="1" required>
+            <br>
+            <label for="mae">mae</label>
+            <br>
+            <input name="data[mae]" id="mae" class="form-control" rows="1" required>
+            <br>
+            <label for="pai">pai</label>
+            <br>
+            <input name="data[pai]" id="pai" class="form-control" rows="1" required>
+            <br>
+            <label for="naturalidade">naturalidade</label>
+            <br>
+            <input name="data[naturalidade]" id="natu" class="form-control" rows="1" required>
+            <br>
+            <label for="TELEFONE">telefone</label>
+            <br>
+            <input name="data[telefone]" id="telefone" class="form-control" rows="1" required>
+            <br>
+            <label for="turma">turma</label>
+            <select name="data[turma_em_2022]">
+               <option>Educação Infantil-Turma de 4 anos</option>
+               <option>Educação Infantil-Turma de 5 anos</option>
+               <option>1º ANO A</option>
+               <option>1º ANO B</option>
+               <option>2º ANO A</option>
+               <option>2º ANO B</option>
+               <option>3º ANO A</option>
+               <option>4º ANO A</option>
+               <option>4º ANO B</option>
+               <option>5º ANO A</option>
+               <option>5º ANO B</option>
+               <option>6º ANO A</option>
+               <option>6º ANO B</option>
+               <option>7º ANO A</option>
+               <option>7º ANO B</option>
+               <option>8º ANO A</option>
+               <option>8º ANO B</option>
+               <option>9º ANO A</option>
+            </select>
+            <br>
+            <button type="submit" class="button">ENVIAR DADOS</button>
+         </form>
+      </section>
+      <script src="envia.js"></script>
+   </body>
+</html>
